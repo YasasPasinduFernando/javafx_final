@@ -19,8 +19,8 @@
       <JFXComboBox fx:id="cmbItemCode" layoutX="75.0" layoutY="137.0" prefHeight="30.0" prefWidth="150.0" />
       <Label layoutX="75.0" layoutY="109.0" prefHeight="18.0" prefWidth="78.0" text="Item Code" />
       <JFXTextField fx:id="txtCustName" layoutX="466.0" layoutY="58.0" prefHeight="26.0" prefWidth="178.0" />
-      <JFXTextField fx:id="txtProduct" layoutX="262.0" layoutY="138.0" prefHeight="26.0" prefWidth="178.0" />
-      <JFXTextField fx:id="txtPrice" layoutX="654.0" layoutY="139.0" prefHeight="26.0" prefWidth="78.0" />
+      <JFXTextField fx:id="txtProduct" layoutX="251.0" layoutY="130.0" prefHeight="35.0" prefWidth="178.0" />
+      <JFXTextField fx:id="txtPrice" layoutX="654.0" layoutY="130.0" prefHeight="35.0" prefWidth="78.0" />
       <Label layoutX="262.0" layoutY="109.0" prefHeight="18.0" prefWidth="78.0" text="Product name" />
       <Label layoutX="466.0" layoutY="38.0" prefHeight="18.0" prefWidth="78.0" text="Name" />
       <Label layoutX="477.0" layoutY="109.0" prefHeight="18.0" prefWidth="78.0" text="Fault" />
