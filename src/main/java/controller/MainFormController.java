@@ -61,7 +61,7 @@ public class MainFormController {
     }
 
     public void reportsOnAction(javafx.event.ActionEvent actionEvent) {
-
+        
     }
 
     public void backbtnOnAction(javafx.event.ActionEvent actionEvent) {
