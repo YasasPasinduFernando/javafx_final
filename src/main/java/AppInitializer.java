@@ -5,17 +5,21 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class AppInitilizer extends Application {
+public class AppInitializer extends Application {
 
     public static void main(String[] args) {
         launch(args);
     }
 
+
     @Override
     public void start(Stage primaryStage) throws IOException {
-        primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/LoginForm.fxml"))));
+        primaryStage.setScene(new Scene(FXMLLoader.load(getClass().getResource("view/DashboardForm.fxml"))));
+        primaryStage.centerOnScreen();
+        primaryStage.setTitle("Dashboard");
+        primaryStage.setResizable(false);
+        primaryStage.show();
 
-        primaryStage.show();;
 
     }
 }

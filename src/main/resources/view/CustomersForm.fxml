@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="460.0" prefWidth="676.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomersFormController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="104.0" layoutY="27.0" prefHeight="57.0" prefWidth="438.0" text="CUSTOMER FORM" textFill="#101011">
+         <font>
+            <Font name="Bell MT Bold" size="48.0" />
+         </font>
+      </Label>
+      <Button layoutY="2.0" mnemonicParsing="false" onAction="#backBtnOnAction" prefHeight="25.0" prefWidth="28.0" style="-fx-background-color: white;" text=".">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="67.0" opacity="0.93" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="41.0" layoutY="105.0" prefHeight="17.0" prefWidth="96.0" text="Customer ID">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="104.0" text="Customer Name">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="306.0" layoutY="105.0" text="Contact number">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="513.0" layoutY="105.0" text="Email">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtID" layoutX="30.0" layoutY="132.0" prefHeight="25.0" prefWidth="96.0" />
+      <TextField fx:id="txtName" layoutX="137.0" layoutY="132.0" prefHeight="25.0" prefWidth="117.0" />
+      <TextField fx:id="txtContact" layoutX="269.0" layoutY="132.0" prefHeight="25.0" prefWidth="172.0" />
+      <TextField fx:id="txtEmail" layoutX="463.0" layoutY="132.0" prefHeight="25.0" prefWidth="193.0" />
+      <Button layoutX="486.0" layoutY="163.0" mnemonicParsing="false" onAction="#updateBtnOnAction" text="Update" />
+      <Button layoutX="560.0" layoutY="163.0" mnemonicParsing="false" onAction="#saveBtnOnAction" prefHeight="25.0" prefWidth="60.0" text="Save" />
+      <TableView fx:id="tblCustomer" layoutX="2.0" layoutY="198.0" prefHeight="228.0" prefWidth="674.0">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="103.0" text="ID" />
+            <TableColumn fx:id="colName" prefWidth="120.0" text="Name" />
+            <TableColumn fx:id="colContact" prefWidth="142.0" text="Contact Number" />
+            <TableColumn fx:id="colEmail" prefWidth="220.0" text="Email" />
+            <TableColumn fx:id="colOption" prefWidth="85.0" text="Option" />
+         </columns>
+      </TableView>
+      <Button layoutX="552.0" layoutY="426.0" mnemonicParsing="false" onAction="#reportBtnOnAction" prefHeight="25.0" prefWidth="90.0" style="-fx-background-color: #14f85c;" text="Report" textFill="WHITE" />
+   </children>
+</AnchorPane>
